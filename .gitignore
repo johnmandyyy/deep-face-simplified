@@ -1,0 +1,14 @@
+# Ignore media files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.avi
+*.mov
+
+# Picle Files
+*.pkl
+
+#Python Cache
+*.pyc
