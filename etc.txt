@@ -1,0 +1,34 @@
+zxc = input("PAUSE")
+# Path to the image you want to analyze
+image_path = "koyaem.jpg"
+
+# Perform analysis using DeepFace
+result = DeepFace.analyze(
+    img_path=image_path, actions=["race"], enforce_detection=False
+)
+
+# Display the result
+print(result)
+
+zxc = input("")
+
+fname = ""
+
+if len(dfs) > 0:
+    for each_rows in dfs:
+        fname = each_rows.identity[0]
+        break
+
+# Print the identity
+print(fname, "IS THE FNAME")
+
+# Remove the pkl file
+pkl_file_path = os.path.join("face_db", "representations_arcface.pkl")
+
+if False:
+
+    if os.path.exists(pkl_file_path):
+        os.remove(pkl_file_path)
+        print(f"{pkl_file_path} has been removed.")
+    else:
+        print(f"{pkl_file_path} does not exist.")
